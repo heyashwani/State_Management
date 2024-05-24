@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-sm bg-light">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Recharge</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" (click)="pageRedirect('recharge/mobile-recharge')" >Mobile Recharge</a></li>
+          <li><a class="dropdown-item" (click)="pageRedirect('recharge/tv-recharge')">TV Recharge</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Money Transfer</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" (click)="pageRedirect('money-transfer/bank-to-bank')" >Bank To Bank</a></li>
+          <li><a class="dropdown-item" (click)="pageRedirect('money-transfer/wallet-to-bank')">Wallet To Bank</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+<router-outlet />
